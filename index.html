@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D T-Shirt Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="tshirt-canvas"></canvas>
+    </div>
+
+    <div id="ui-container">
+        <button id="add-text-button">Add Text</button>
+        <input type="color" id="text-color-picker" value="#000000">
+        <input type="text" id="font-size-input" placeholder="Font Size">
+        <select id="font-family-select">
+            <option value="Arial">Arial</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <!-- Add more font options as needed -->
+        </select>
+        <input type="color" id="shirt-color-picker" value="#ffffff">
+        <button id="download-button">Download Image</button>
+        <button id="brush-button">Brush</button>
+        <button id="delete-button">Delete</button>
+        <button id="add-image-button">Add Image</button>
+    </div>
+
+    <div id="canvas3d-container"></div>
+
+    <script type="module" src="/js/main.js"></script>
+    <script src="/js/fabric.min.js"></script>
+    <script src="/js/three.min.js"></script>
+    <script src="/js/dat.gui.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
